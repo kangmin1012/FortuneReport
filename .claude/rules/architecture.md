@@ -217,9 +217,9 @@ fun `LoadReport 성공 시 state에 report가 설정된다`() = runTest {
 
 ### Claude API 응답 스펙
 ```json
-{ "grade": "A", "summary": "한 문장 (20자 이내)", "advice": "오늘의 조언 (50자 이내)" }
+{ "grade": "SUNNY", "summary": "한 문장 (20자 이내)", "advice": "오늘의 조언 (50자 이내)" }
 ```
-grade 허용값: `S | A | B | C | D`
+grade 허용값: `SUNNY | CLEAR | CLOUDY | RAINY | STORM` (날씨 5단계, 자세한 톤 가이드 → `docs/PRD.md` 5절)
 
 ### 푸시 알림 흐름
 ```

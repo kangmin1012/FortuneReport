@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 프로젝트 개요
 
-**포춘페이퍼 (FortunePaper)** — 사주(생년월일) 기반 운세를 한 장의 리포트 형식으로 매일 발행하는 KMP 모바일 앱.
+**포춘페이퍼 (FortunePaper)** — 사주(생년월일 + 성별) 기반 운세를 한 장의 리포트 형식으로 매일 발행하는 KMP 모바일 앱.
 패키지명: `com.fortune.paper`
 
 ---
@@ -44,14 +44,8 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 | 파일 | 내용 |
 |------|------|
+| `prd.md` | 제품 요구사항 — 등급 체계, 기능 명세, 페르소나, 성공 지표 |
+| `tasks.md` | 개발 태스크 체크리스트 — 단계별 구현 항목 |
 | `architecture.md` | Clean Architecture · MVI · TOAD 패턴, 레이어 구조, DB 스키마, 백엔드 흐름 |
 | `di.md` | Koin 모듈 구성 및 의존성 주입 규칙 |
 | `ui.md` | Composable 규칙, Material3 디자인 시스템, Coil 이미지 로딩 |
-
----
-
-## 미결정 사항
-
-- 운세 등급 체계: S·A·B·C·D vs 1~100점
-- 수익 모델: 출시 후 반응 보고 유료화 검토
-- 커스텀 디자인 파일 적용 시점
