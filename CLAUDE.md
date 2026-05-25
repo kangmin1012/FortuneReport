@@ -49,3 +49,4 @@ export PATH="$JAVA_HOME/bin:$PATH"
 | `architecture.md` | Clean Architecture · MVI · TOAD 패턴, 레이어 구조, DB 스키마, 백엔드 흐름 |
 | `di.md` | Koin 모듈 구성 및 의존성 주입 규칙 |
 | `ui.md` | Composable 규칙, Material3 디자인 시스템, Coil 이미지 로딩 |
+| `secrets.md` | 민감한 키 저장 규칙 — local.properties 저장 전 체크리스트 |
