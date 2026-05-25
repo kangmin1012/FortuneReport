@@ -177,7 +177,7 @@
 | 앱 | Compose Multiplatform (KMP) |
 | 인증 | 카카오 로그인 SDK + Supabase Auth |
 | 백엔드 | Supabase (DB · Edge Functions · pg_cron) |
-| AI | Claude API (Anthropic) |
+| AI | Gemini API (Google AI Studio) — 무료 티어 사용, 출시 전 Claude 교체 검토 |
 | 푸시 알림 | Firebase Cloud Messaging (FCM) |
 | DI | Koin |
 | 이미지 | Coil (KMP) |

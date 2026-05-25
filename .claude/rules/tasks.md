@@ -8,10 +8,10 @@
 
 | 상태 | 항목 | 비고 |
 |------|------|------|
-| ⬜ | Supabase 프로젝트 생성 | Project URL · anon key · service_role key 확보 |
+| ✅ | Supabase 프로젝트 생성 | Project URL · anon key · service_role key 확보 |
 | ⬜ | Firebase 프로젝트 생성 | google-services.json · GoogleService-Info.plist 다운로드, FCM 활성화 |
-| ⬜ | 카카오 개발자 앱 등록 | Native 앱 키 확보, 패키지명 `com.fortune.paper` 등록, 카카오 로그인 활성화 |
-| ⬜ | Anthropic API 키 발급 | Claude API 키 확보 |
+| ✅ | 카카오 개발자 앱 등록 | Native 앱 키 확보, 패키지명 `com.fortune.paper` 등록, 카카오 로그인 활성화, Supabase 연동 완료 |
+| ✅ | AI API 키 발급 | Gemini API 사용 (Google AI Studio 무료 티어) — Task 4에서 키 발급 후 Edge Function에 적용 |
 
 ---
 
@@ -31,10 +31,10 @@
 
 ## Task 2. DB 스키마
 
-- [ ] Supabase에서 `users` 테이블 생성
-- [ ] Supabase에서 `fortunes` 테이블 생성
-- [ ] `user_id + date` UNIQUE 제약 추가
-- [ ] RLS(Row Level Security) 정책 설정
+- [x] Supabase에서 `users` 테이블 생성
+- [x] Supabase에서 `fortunes` 테이블 생성
+- [x] `user_id + date` UNIQUE 제약 추가
+- [x] RLS(Row Level Security) 정책 설정
 
 ---
 

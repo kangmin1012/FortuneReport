@@ -215,11 +215,14 @@ fun `LoadReport 성공 시 state에 report가 설정된다`() = runTest {
   → 캐시 있으면: DB 레코드 반환
 ```
 
-### Claude API 응답 스펙
+### AI API 응답 스펙
 ```json
 { "grade": "SUNNY", "summary": "한 문장 (20자 이내)", "advice": "오늘의 조언 (50자 이내)" }
 ```
 grade 허용값: `SUNNY | CLEAR | CLOUDY | RAINY | STORM` (날씨 5단계, 자세한 톤 가이드 → `docs/PRD.md` 5절)
+
+> **현재 사용 AI**: Gemini API (Google AI Studio 무료 티어 — Gemini 1.5 Flash)
+> 출시 전 Claude API 교체 검토. API 호출부는 Edge Function에 격리되어 있어 교체 시 앱 코드 변경 없음.
 
 ### 푸시 알림 흐름
 ```
