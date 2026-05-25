@@ -17,15 +17,15 @@
 
 ## Task 1. 프로젝트 세팅
 
-- [ ] `libs.versions.toml` 의존성 추가
-  - [ ] Supabase KMP SDK
-  - [ ] Koin (KMP)
-  - [ ] Coil (KMP)
-  - [ ] Firebase KMP (FCM)
-  - [ ] Kotlin Serialization
-- [ ] Koin 모듈 초기 구조 생성 (`di/` 디렉토리)
-- [ ] 레이어 디렉토리 구조 생성 (`presentation/`, `domain/`, `data/`, `auth/`)
-- [ ] Supabase 클라이언트 초기화 (`SupabaseClient.kt`)
+- [x] `libs.versions.toml` 의존성 추가
+  - [x] Supabase KMP SDK
+  - [x] Koin (KMP)
+  - [x] Coil (KMP)
+  - [x] Firebase KMP (FCM) — 버전 카탈로그 등록 완료, `build.gradle.kts` 추가는 Task 6(google-services.json 준비 후)
+  - [x] Kotlin Serialization
+- [x] Koin 모듈 초기 구조 생성 (`di/` 디렉토리)
+- [x] 레이어 디렉토리 구조 생성 (`presentation/`, `domain/`, `data/`, `auth/`)
+- [x] Supabase 클라이언트 초기화 (`SupabaseClientProvider.kt`)
 
 ---
 
@@ -40,11 +40,11 @@
 
 ## Task 3. 카카오 로그인
 
-- [ ] `KakaoAuth.kt` expect 선언 작성
-- [ ] `KakaoAuth.android.kt` actual 구현 (카카오 Android SDK)
-- [ ] `KakaoAuth.ios.kt` actual 구현 (카카오 iOS SDK)
+- [x] `KakaoAuth.kt` expect 선언 작성
+- [ ] `KakaoAuth.android.kt` actual 구현 (카카오 Android SDK) — 카카오 앱 키 필요
+- [ ] `KakaoAuth.ios.kt` actual 구현 (카카오 iOS SDK) — 카카오 앱 키 필요
 - [ ] Supabase Auth 커스텀 토큰 교환 로직 구현
-- [ ] `UserRepository` 인터페이스 및 구현체 작성
+- [x] `UserRepository` 인터페이스 및 구현체 작성
 - [ ] 로그인 화면 UI (TOAD + MVI)
   - [ ] `LoginState`, `LoginEvent`, `LoginDependencies`
   - [ ] `KakaoLoginAction`
@@ -59,15 +59,15 @@
   - [ ] Claude API 호출 로직
   - [ ] `{ grade, summary, advice }` JSON 응답
   - [ ] DB 저장 및 캐시 반환 로직
-- [ ] `FortuneRepository` 인터페이스 및 구현체 작성
-- [ ] `GetTodayReportUseCase` 작성
+- [x] `FortuneRepository` 인터페이스 및 구현체 작성
+- [x] `GetTodayReportUseCase` 작성
 - [ ] Edge Function 배포 및 테스트
 
 ---
 
 ## Task 5. 리포트 화면 UI
 
-- [ ] `FortuneReport` 도메인 모델 정의
+- [x] `FortuneReport` 도메인 모델 정의
 - [ ] `ReportState`, `ReportEvent`, `ReportDependencies` 작성
 - [ ] Actions 작성
   - [ ] `LoadReport`
