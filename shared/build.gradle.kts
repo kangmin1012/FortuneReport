@@ -64,7 +64,12 @@ kotlin {
 
             // Kotlinx
             implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization.json)
+
+            // Coil
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor)
 
             // Ktor
             implementation(libs.ktor.client.core)
